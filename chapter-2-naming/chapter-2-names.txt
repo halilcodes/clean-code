@@ -1,2 +1,29 @@
-variables, constants, properties
+variables, constants, properties: data containers--nouns or short phrases with adjectives. e.g. userData = {...} isValid = bool()
+
+
+functions/methods: commands or calculated values -- verbs or short phrases with adj. e.g. sendData(), inputIsValid()
+
+Classes: to create "things" - -nouns or short phrases with nouns. e.g. User {}, RequestBody{}
+
+
+!! names should be meaningful
+
+--CASING CONVENTIONS
+snake_case: variables, functions,methods
+camelCase: mostly java and js
+PascalCase: Classes
+kebab-case: html elements
+
+--Naming Variables&Properties:
+object: describe the value (user/database) 
+string: name, age
+boolean: isActive, loggedIn
+
+--Naming functions & methods:
+performs operation: describe the operation e.g. getUser(), response.send(), getUserByEmail()/ saveUser(), user.save()
+computes a boolean value: e.g. isValid(), purchase.isPaid(), emailIsValid()
+
+--Naming classes:
+describe the object: User, Product, Admin, Database or SQLDatabase
+add more details if needed: Customer, Course
 
