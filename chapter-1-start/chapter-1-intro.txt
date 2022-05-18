@@ -1,0 +1,22 @@
+important parts:
+1- names: variables, functions, classes
+2- structure % comments
+3- functions: length and parameters
+4- conditionals & error handling: deep nesting, missing error handling
+5- classes & data structures: missing distinction, bloated classes
+
+
+--solutions--
+rules&concepts / patterns&principles // Test-Driven Development
+TODO: (implement unit testing course close-by)
+
+-- course structure:
+theory --> demos & examples --> challenges
+
+-- prerequisites:
+python experience (and some js and typescript)
+**embrace refactoring
+
+pro tip: whenever you add something new, try to improve your code along the way.
+
+
