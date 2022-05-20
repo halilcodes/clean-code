@@ -1,0 +1,34 @@
+//comments & structure
+
+-- COMMENTS --
+-- BAD COMMENTS
+- mostly we want to avoid redundand comments
+- if code makes sense, don't use comments
+- commented-out code: don't use them
+--- GOOD COMMENTS
+- legal information, disclaimer
+- explanation that can't be explained by naming
+- warnings
+- TODO notes
+- unfinished code can be commented-out
+- PEP 257: function description documentation strings (""" ... """)
+
+
+--STRUCTURE--
+
+-- CODE FORMATTING 
+- Vertical formatting: readable like an essay. top to bottom, without too many "jumps"
+    - space between lines
+    - grouping of code
+    * consider splitting files with multiple concepts (eg classes)
+    * different concepts should be seperated by spacing in the same file.
+
+-Horizontal formatting: readable without scrolling
+    - Indentation: intuitive
+    - Space between code
+    - Line width
+    * use indentation even if not neccessary in order to avoid scrolling
+    * avoid too long naming
+
+- PEP8: Python style guide
+- 
