@@ -1,0 +1,10 @@
+// functions (& methods)
+
+- calling the function should be readable (name)
+    - 
+
+- working with the function should be readable (params)
+    - minimize the number of parameters
+    - don't use more than 3 parameters/arguments
+        - if possible, divide into different functions OR make classes
+    
