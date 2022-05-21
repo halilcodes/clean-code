@@ -1,4 +1,4 @@
-// functions (& methods)
+// Chapter 4: Functions (& methods)
 
 - calling the function should be readable (name)
     - 
@@ -8,3 +8,30 @@
     - don't use more than 3 parameters/arguments
         - if possible, divide into different functions OR make classes
     
+* functions should be close and each funstion should do just one thing. It's easier to see what
+the function does that way. As much as possible, split complicated functions into small and easier ones
+* one thing means; each function has one job. you can then write a function that calls all others to execute
+complicated codeblocks.
+
+TODO: convert pairs trading strategy into small functions and execute on different stock pairs, times etc.
+
+- high-level abstraction: we don't know how code operates (eg isEmail(email))
+- low-level abstraction: we know hot code operates (eg email.includes('@'))
+** try not to mix levels of abstraction (see good-function.js)
+
+when should you split? rule of thumb
+- if you can extract code that works on the same functionality. 
+- extract code that requires more interpretation than the surrounding code 
+    - if email.includes("@"):           THIS IS BAD
+            saveNewUser(email)
+    - if isValid(email):                THIS IS OKAY
+            saveNewUser(email)
+
+* splitting also helps if we want to use specific code block somewhere else.
+DRY (Don't repeat yourself). write DRY code.
+* better function (pure function) returns the same output for the same input. ie no randoms etc.
+
+* functions shouldn't have unexpected side-effects. If it does, split that part into another function
+
+--Unit testing helps!
+    - can you easily test a function? you should with a clean code
