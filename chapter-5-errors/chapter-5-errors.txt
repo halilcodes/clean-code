@@ -1,0 +1,23 @@
+// Chapter 5: Errors & Useful Concepts
+
+! Code smart, not verbose
+
+-Avoid deeply nested control structures
+    - Use factory functions & polymorphism
+
+- Prefer positive checks (isEmpty rahet than isNotEmpty)
+
+- Use guards: (if not email.includes("@"): return)
+    - failure cases first... that'll decrease nesting levels 
+    - shortens the code and make it more readable
+
+- Utilize Errors
+    - don't avoid them with if statements, handle them accordingly
+    - try--except's are better than if--elif's
+
+- Use factory functions
+    - object (ie dictionary) provider functions
+    - polymorphism: same function that does different things to different objects
+        - use functions without calling them, ie using () at the end
+    - lesson #71: important example about factory functions and polymorphism
+    - lesson #74: another final touch to split file into different relevant files
