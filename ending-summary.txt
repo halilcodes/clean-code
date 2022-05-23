@@ -1,0 +1,28 @@
+"clean code" is code which is easy to read and understand by a HUMAN
+Vitals:
+    - Choose descriptive names for variables, classes and methods
+        - be consistent with your names and casing
+    - Avoid comments AMAP 
+        - except legal info, warnings, docstrings, todos, explanations
+    - Keep lines short and use proper indentation
+        - IDE auto-formatting helps
+    - limit the number of function parameters
+        - use dicts or objects as "value containers" if neccessary
+    - mind the level of abstraction
+    - DON'T REPEAT YOURSELF and avoid side-effects
+    - Prefer positive wording
+    - avoid deep-nesting
+        - use guards or extract conditions into seperate functions
+    - handle errors instead of using if statements
+    - either use real-objects or data containers / structures -- Don't mix them
+    - use small classes: focuses on one responsibility
+    - follow the "law of demeter" when working with real objects
+    - follow SOLID principle, especially SRP and OCP
+
+!! clean code == readable and understandable code
+    - that is the ultimate goal
+    - also consider PEP8 etc. language specific guidelines
+
+what to do next: 
+    - clean architecture: OOP basics course
+    - Test driven Development: python unit testing bootcamp
