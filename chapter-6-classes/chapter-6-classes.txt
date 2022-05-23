@@ -1,3 +1,67 @@
 // Chapter 6: Classes & Data Containers
 
+! Keep your Classes clean
 
+? object-oriented principles (SOLID, Law of Demeter)
+* Polymorphism
+
+! This section is not an OOP course. It'll just teach how to write clean OOP
+    - we won't dive into all OOP patterns & practices
+
+Object: private internals/properties with public API
+        contain your business logic 
+
+Data container / data structure: public internals / properties without an API
+                                 store and transport data
+                                 concretions only
+
+-the differentiation matters because;
+    - otherwise it'll lead to bad code
+    - 
+
+* Polymorphism: The ability of an object to take on many forms.
+    - 
+
+- Classes should be small
+    - multiple small classes are better than one large class
+    - classes should have a single responsibility. Single-Responsibility Principle (SRP)
+    - OnlineShop --> Order / Product / Customer / Inventory etc. see smaller-class.ts
+    - don't oversplit!
+
+- Cohesion:to decide wheter a class is too big/ too small or okay
+    - all methods each use all properties = maximum Cohesion
+    - data structure/container with utiliy methods = No Cohesion
+    - the goal is high Cohesion. no strict rules but eyeballing works.
+    - see cohesion.ts
+
+- The Law of Demeter: 
+    - this.customer.lastPurchase.date;  AVOID CODE LIKE THIS except for data containers
+    - don't depend on the internals of "strangers" (ohter objects which you don't directly know)
+        - .date is an internal of ohter object.
+    - Tell, Don't Ask!
+        - don't get the date (as an example) form other class and use it, instead solve it internally
+
+- The SOLID Principle:
+    S Single responsibility principle
+        - classes should have a single responsibility
+        - a class shouldn't change for more than one reason
+        - single-responsibility ie: deals with just customers / products / warehouse / orders etc. 
+        - responsibility may depend on use case, you should decide.
+    O Open-Close Principle
+        - a class should be open for extension but close for modification
+        - Polymorphism solves it most of the time
+        - extensibility ensures small classes and can help prevent code duplication (DRY)
+    L Liskov Substitution Principle
+        - objects should be replacable with instances of their sub-classes without altering the behavior
+        - all Bird can't dive, but all Eagle (bird sub-class) can fly
+            - Penguin is a bird but can't fly... so Bird main-class shouldn't have .fly() method.
+            - make a FlyingBird sub-class.
+        - readability may not change much but extensibility changes dramatically
+    I Interface Segregation Principle
+        - many client-specific interfaces are better than one general purpose interface
+        - see isp.ts
+    D Dependency Inversion Principle
+        - you should depend upon abstractions, not concretions
+        - see dip.ts
+
+    * S and O matters the most
